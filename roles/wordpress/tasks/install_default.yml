@@ -1,13 +1,5 @@
 ---
 
-- name: Configure WP-CLI
-  template:
-    src: 'var/www/wp-cli.local.yml.j2'
-    dest: '{{ wordpress__root }}/wp-cli.local.yml'
-    owner: '{{ wordpress__user_name }}'
-    group: '{{ wordpress__user_group }}'
-    mode: '0644'
-
 - name: Download WordPress
   command: 'wp core download'
   become_user: '{{ wordpress__user_name }}'
