@@ -22,8 +22,3 @@
 - include: 'install_{{ wordpress__install_type }}.yml'
   when: wordpress__register_installed is defined and wordpress__register_installed.rc == 1
 
-- name: Setup WordPress permalink structure
-  command: 'wp rewrite structure {{ wordpress__permalink_structure }}'
-  become_user: '{{ wordpress__user_name }}'
-  args:
-    chdir: '{{ wordpress__root }}'
