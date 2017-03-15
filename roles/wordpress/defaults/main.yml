@@ -13,15 +13,15 @@
 #
 # List of dependencies that the role manages.
 wordpress__dependencies:
-  - 'composer'
-  - 'fail2ban'
-  - 'mariadb'
-  - 'nginx'
+#  - 'composer'
+#  - 'fail2ban'
+#  - 'mariadb'
+#  - 'nginx'
   - 'php'
-  - 'pki'
-  - 'redis'
-  - 'varnish'
-  - 'wpcli'
+#  - 'pki'
+#  - 'redis'
+#  - 'varnish'
+#  - 'wpcli'
 
 # .. envvar:: wordpress__install_type
 #
